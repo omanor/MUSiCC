@@ -18,8 +18,9 @@ import uuid
 import numpy as np
 from scipy import stats
 import pandas as pd
-from sklearn import cross_validation, linear_model  # for the LASSO
-from sklearn.utils import ConvergenceWarning
+from sklearn.model_selection import KFold
+from sklearn import linear_model  # for the LASSO
+from sklearn.exceptions import ConvergenceWarning
 
 
 ################################################################################################################
